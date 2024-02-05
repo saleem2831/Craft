@@ -1288,7 +1288,7 @@ footer {
 	padding-bottom: 50px;
 }
 .footer-bottom {
-	padding-top: 100px;
+	/* padding-top: 100px; */
 }
 .footer-title {
 	font-weight: 700;
@@ -1483,8 +1483,12 @@ footer {
 	padding: 100px 0px ;
 }
 
+.pad-new-2{
+	padding: 180px 0px 100px 0px ;
+}
+
 .new-bg{
-	background-color:#000 !important;
+	background-color:#071919 !important;
 }
 
 header.sticky.sec-header  {
@@ -2189,6 +2193,7 @@ a.see-project:hover {
     font-size: 15px;
     background: #960044;
     color: #ffffff;
+	margin-top: 30px;
 }
 
 .contact .title h3 {

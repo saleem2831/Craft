@@ -24,7 +24,7 @@
                 </span>
         <!-- End here Page Loader-->
         <!--Header start here -->
-        <header class="header sec-header po-background" id="po_header">
+        <header class="header sec-header po-background new-bg" id="po_header">
                 <div class="container">
                     <div class="row mx-md-0">
                         <div class="col-6 col-sm-4 page-logo">
@@ -50,7 +50,7 @@
                                         <!-- Left links -->
                                         <ul class="navbar-nav mb-0 justify-content-end" id="main_nav"> 
                                             <li class="nav-item">
-                                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                                <a class="nav-link " aria-current="page" href="index.html">Home</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link scrollto" href="about.html">About Us</a>
@@ -58,17 +58,8 @@
                                             <li class="nav-item">
                                                 <a class="nav-link scrollto" href="services.html">Services</a>
                                             </li>
-                                            <!-- <li class="nav-item">
-                                                <a class="nav-link scrollto" href="#ourproject">Projects</a>
-                                            </li> -->
-                                            <!-- <li class="nav-item">
-                                                <a class="nav-link scrollto" href="#testimonial">Testimonials</a>
-                                            </li> -->
-                                            <!-- <li class="nav-item">
-                                                <a class="nav-link scrollto" href="#blogs">Blog</a>
-                                            </li> -->
                                             <li class="nav-item">
-                                                <a class="nav-link scrollto " href="contact.html">Contact Us</a>
+                                                <a class="nav-link scrollto active " href="contact.html">Contact Us</a>
                                             </li>
                                         </ul>
                                         <!-- Left links -->
@@ -82,6 +73,73 @@
                 </div>
         </header>
         <!-- header end here -->
+
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="heading text-center">
+                    <h2><span>Contact
+                         Us </span></h2>
+                    <p>Experience a fresh perspective on B2B trade with a team committed to
+                        <br>reshaping the landscape of commerce.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <!-- <div class="title">
+                            <h3>Contact detail</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                        </div> -->
+                        <div class="content">
+                            <!-- Info-1 -->
+                            <div class="info">
+                                <i class="fas fa-mobile-alt"></i>
+                                <h4 class="d-inline-block">PHONE :
+                                    <br>
+                                    <span>+91-9666272829</span></h4>
+                            </div>
+                            <!-- Info-2 -->
+                            <div class="info">
+                                <i class="far fa-envelope"></i>
+                                <h4 class="d-inline-block">EMAIL :
+                                    <br>
+                                    <span>info@craftpns.com</span></h4>
+                            </div>
+                            <!-- Info-3 -->
+                            <div class="info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h4 class="d-inline-block">ADDRESS :<br>
+                                    <span>1st Floor, ARKA Heights, Plot No 125 & 126,<br> behind Preston Prime Mall,Lumbini Avenue,<br>  Gachibowli, Hyderabad, Telangana 500081
+                                    </span></h4>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-7">
+                            <!--  -->
+                            <div class="row">
+                                    <input type="text" class="form-control" id="name" placeholder="Name" required>
+                                    <p id="errorOutput" class="error"></p>
+                                </div>
+                                <div class="row">
+                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                    <p id="errorOutput2" class="error"></p>
+                                </div>
+                            <div class="row">
+                                <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                                <p id="errorOutput3" class="error"></p>
+                            </div>
+                            <div class="row">
+                                <textarea class="form-control" rows="5" id="comment" placeholder="Message" required></textarea>
+                                <p id="errorOutput4" class="error"></p>
+                            </div>
+                            <div class="row">
+                                <button class="btn btn-block form-control" onclick="validateForm()" type="submit">Send Now!</button>
+                            </div>
+                            <!--  -->
+                    </div>
+                </div>
+            </div>
+        </section>
         
 
 
@@ -134,30 +192,9 @@
                                 <li class="footer-item pb-3">
                                     <a href="contact.html" class="po-wtext footer-nav">contact us</a>
                                 </li>
-                                <!-- <li class="footer-item pb-3">
-                                    <a href="javascript:void(0);" class="po-wtext footer-nav">terms and conditions</a>
-                                </li> -->
-                                <!-- <li class="footer-item pb-3">
-                                    <a href="javascript:void(0);" class="po-wtext footer-nav">privacy policy</a>
-                                </li> -->
                             </ul>
                         </div>
-                        <!-- <div class="col-12 col-sm-1 mx-auto foo-col">
-                            <ul class="footer-social-icon list-unstyled text-center mt-3">
-                                <li class="social-link pb-3">
-                                    <a href="javascript:void(0);"> <i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li class="social-link pb-3">
-                                    <a href="javascript:void(0);"> <i class="fab fa-twitter"></i></a>
-                                </li>
-                                <li class="social-link pb-3">
-                                    <a href="javascript:void(0);"><i class="fab fa-instagram"></i></a>
-                                </li>
-                                <li class="social-link pb-3">
-                                    <a href="javascript:void(0);"><i class="fab fa-linkedin-in"></i></a>
-                                </li>
-                            </ul>
-                        </div> -->
+
                     </div>
                 </div>
             </div>
@@ -178,5 +215,59 @@
 <script>
     new WOW().init();
 </script>
+<script>
+    function validateForm() {
+      const nameInput = document.getElementById("name").value;
+      const emailInput = document.getElementById("email").value;
+      const messageInput = document.getElementById("subject").value;
+      const commentInput = document.getElementById("comment").value;
+
+      const errorOutput = document.getElementById("errorOutput");
+      const errorOutput2 = document.getElementById("errorOutput2");
+      const errorOutput3 = document.getElementById("errorOutput3");
+      const errorOutput4 = document.getElementById("errorOutput4");
+
+
+      // Clear previous error message
+      errorOutput.textContent = "";
+      errorOutput2.textContent = "";
+      errorOutput3.textContent = "";
+      errorOutput4.textContent = "";
+
+      // Validate name
+      if (nameInput.trim() === "") {
+        errorOutput.textContent = "Name cannot be empty.";
+        return;
+      } else if (!/^[A-Za-z\s]+$/.test(nameInput)) {
+        errorOutput.textContent = "Name can only contain alphabetic characters and spaces.";
+        return;
+      }
+
+      // Validate email
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (emailInput.trim() === "") {
+        errorOutput2.textContent = "Email cannot be empty.";
+        return;
+      } else if (!emailRegex.test(emailInput)) {
+        errorOutput2.textContent = "Invalid email address.";
+        return;
+      }
+
+      // Validate message
+      if (messageInput.trim() === "") {
+        errorOutput3.textContent = "Subject cannot be empty.";
+        return;
+      }
+
+      if (commentInput.trim() === "") {
+        errorOutput4.textContent = "Message cannot be empty.";
+        return;
+      }
+
+      // All fields are valid - you can perform additional actions here
+      alert("Form is valid:\nName: " + nameInput + "\nEmail: " + emailInput + "\nSubject: " + messageInput + "\Message: " + commentInput);
+    }
+  </script>
+
 </body>
 </html>

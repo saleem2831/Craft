@@ -1470,7 +1470,7 @@ footer {
 	height: auto;
 	width: 100%;
 	padding: 30px 0px;
-	background: transparent!important;
+	/* background: transparent!important; */
     position: absolute;
     z-index: 999;
     top: 0;
